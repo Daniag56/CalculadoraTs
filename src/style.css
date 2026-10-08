@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #1e1e1e;
+    padding: 30px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+#grid-calculadora {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    gap: 25px;
+    justify-content: center;
+}
+
+
+
+#calculadora1,
+#calculadora2,
+#reloj,
+#cronometro {
+    background: #2b2b2b;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.4);
+}
+
+
+
+#calculadora3:empty {
+    display: none;
+}
+
+
+
+.calculadora {
+    width: 100%;
+}
+
+
+
+.display {
+    margin-bottom: 20px;
+}
+
+.display-input {
+    width: 100%;
+    height: 90px;
+    border: none;
+    border-radius: 15px;
+    background: #101114;
+    color: white;
+    font-size: 2.3rem;
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+
+.teclado button {
+    height: 70px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    background: #444;
+    color: white;
+
+    transition: .2s;
+}
+
+.teclado button:hover {
+    transform: translateY(-2px);
+}
+
+
+
+.number {
+    background: #555;
+}
+
+
+
+.operation {
+    background: #ff9500;
+}
+
+.operation:hover {
+    background: #ffaa33;
+}
+
+
+
+.equals {
+    background: #007aff;
+}
+
+.equals:hover {
+    background: #3395ff;
+}
+
+
+
+.reset {
+    background: #ff3b30;
+}
+
+.reset:hover {
+    background: #ff5c53;
+}
+
+
+
+.delete {
+    background: #6c757d;
+}
+
+
+
+.span-two {
+    grid-column: span 2;
+}
+
+
+
+#reloj {
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#cronometro {
+    color: white;
+}
+
+#cronometro .display,
+#cronometro .timer {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#cronometro button {
+    border: none;
+    border-radius: 12px;
+    padding: 15px 25px;
+    background: #007aff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+}
